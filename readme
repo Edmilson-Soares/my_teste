@@ -1,0 +1,25 @@
+REDIS_HOST='127.0.0.1'
+REDIS_PORT=6379
+REDIS_PASSWORD='eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81'
+
+
+
+**************************************
+
+
+docker build .
+
+
+docker build -t
+
+docker build -t test .
+
+
+docker run -d --restart=always -p 8080:80 image_name:version
+
+docker container run --name teste -p 1337:1337
+
+
+
+
+docker-compose exec kafka kafka-topics.sh --create --topic baeldung_linux --partitions 1 --replication-factor 1 --bootstrap-server kafka:9092
