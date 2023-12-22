@@ -1,9 +1,9 @@
 
 
-import { createClient } from 'redis';
+const { createClient } =require('redis');
 let client = {}
 
-export default {
+module.exports= {
    async connect(){
 
     client= createClient({

@@ -1,4 +1,4 @@
-import { tryCatch } from 'bullmq'
+
 import { Kafka } from 'kafkajs'
 
 export default async ({clientId,brokers,groupId})=> {

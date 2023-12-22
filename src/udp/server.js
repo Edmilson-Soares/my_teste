@@ -12,9 +12,9 @@ const serve=({
       },
     on= async({data,send}) => {
 
-        console.log({data,send})
+        console.log(data)
 
-       await send({data:'ddddddddddddddddd'})
+     await send({data:'ddddddddddddddddd'})
 
       
 
@@ -27,13 +27,14 @@ const server = UDP.createSocket('udp4')
 server.on('listening', ()=>start({server}))
 
 server.on('message',async (message, info) => {
+ 
     let data=message.toString()
     try {
         data=JSON.parse(data)
     } catch (error) {
         
     }
-
+    console.log(data)
     const send=({data,port,address})=>{
 
         new Promise((resolve, reject) => {
